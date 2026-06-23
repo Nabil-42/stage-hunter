@@ -1,0 +1,22 @@
+# ─── Secrets — ne JAMAIS committer les vraies clés API ────────────────────────
+.env
+
+# ─── Sorties générées ─────────────────────────────────────────────────────────
+rapport_stages.html
+stages_*.csv
+stages_*.json
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ─── Outils / IDE ─────────────────────────────────────────────────────────────
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
