@@ -51,18 +51,28 @@ fichier `job_hunter.py`.
 
 ## 🚀 Démarrage rapide
 
+**Prérequis :** [Python 3.9+](https://www.python.org/downloads/) (vérifie avec `python --version`).
+
 ```bash
-# 1. Installer les dépendances
+# 1. Récupérer le projet
+git clone https://github.com/Nabil-42/stage-hunter.git
+cd stage-hunter
+
+# 2. (Recommandé) Créer un environnement virtuel
+python -m venv .venv
+source .venv/bin/activate        # Windows : .venv\Scripts\activate
+
+# 3. Installer les dépendances
 pip install -r requirements.txt
 
-# 2. Configurer tes clés API (toutes gratuites — voir le fichier pour les liens)
-cp .env.example .env        # Windows : copy .env.example .env
+# 4. Configurer tes clés API (toutes gratuites — voir le fichier pour les liens)
+cp .env.example .env             # Windows : copy .env.example .env
 #   → édite .env avec TES clés
 
-# 3. Lancer la recherche
+# 5. Lancer la recherche
 python job_hunter.py
 
-# 4. Ouvrir le rapport
+# 6. Ouvrir le rapport généré
 #   → rapport_stages.html dans ton navigateur
 ```
 
