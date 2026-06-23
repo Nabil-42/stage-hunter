@@ -98,6 +98,21 @@ Tout est dans le dictionnaire `PROFIL` en haut de [`job_hunter.py`](job_hunter.p
 - `poids` — combien chaque compétence rapporte au score ;
 - `departements_idf`, `localisation`, `rayon_km` — la zone géographique.
 
+### 🤖 Pas sûr des mots-clés à mettre ? Demande à une IA
+
+Copie ce prompt dans ChatGPT / Claude / Gemini et colle le résultat à la place du
+`PROFIL` existant :
+
+```text
+Je cherche : [ex. une alternance en data engineering].
+Voici le dictionnaire Python `PROFIL` d'un agrégateur d'offres d'emploi
+(mots_cles_positifs, mots_cles_negatifs, poids par compétence, zone géo).
+Réécris-le pour MON profil ci-dessus : liste les compétences/technos pertinentes
+dans "mots_cles_positifs", ce qui est hors-sujet dans "mots_cles_negatifs", et
+donne un "poids" (1 à 10) aux compétences clés. Garde EXACTEMENT la même structure
+Python que cet exemple : [colle ici le bloc PROFIL = { ... } de job_hunter.py]
+```
+
 ---
 
 ## 📂 Contenu du dépôt
